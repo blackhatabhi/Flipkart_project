@@ -1,5 +1,7 @@
 import { AppBar , Toolbar,makeStyles,Box,Typography} from '@material-ui/core';
 
+//components
+import SearchBar from './searchbar';
 
 const useStyle = makeStyles({
     header: {
@@ -55,6 +57,7 @@ const Header = () => {
                         <Typography className = {classes.subHeading}>Explore <Box component="span" style={{color:'#FFE500'}}>Plus</Box></Typography>
                         <img src={subURL} className={classes.subURL} />
                     </Box>
+                    <SearchBar />
             </Toolbar>
         </AppBar>
           )
